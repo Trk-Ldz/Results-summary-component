@@ -1,0 +1,303 @@
+@font-face {
+    font-family: 'HankenGrotesk';
+    font-display: swap;
+    src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+}
+
+:root {
+
+    /* Primary color */
+    --Light_red: hsla(0, 100%, 67%, 100%);
+    --Orange_yellow: hsl(39, 100%, 56%);
+    --Green_teal: hsl(166, 100%, 37%);
+    --Cobalt_blue: hsl(234, 85%, 45%);
+
+    /* Gradient 1 */
+    --Light_slate_blue-background: hsl(252, 100%, 67%);
+    --Light_royal_blue-background: hsl(241, 81%, 54%);
+
+    /* Gradient 2 */
+    --Violet_blue-circle: hsla(256, 72%, 46%, 1);
+    --Persian_blue-circle: hsla(241, 72%, 46%, 0);
+
+    /* Neutral Color */
+    --White: hsl(0, 0%, 100%);
+    --Pale_blue: hsl(221, 100%, 96%);
+    --Light_lavender: hsl(241, 100%, 89%);
+    --Dark_gray_blue: hsl(224, 30%, 27%);
+
+    /* Use transparency to get the colour variations necessary to match the design. Hint: look into using `hsla()`.*/
+
+    /* Typographie */
+
+    --Font_weight_500: 'Hanken_Grotesk_Medium';
+    --Font_weight_700: 'Hanken_Grotesk_Bold';
+    --Font_weight_800: 'Hanken_Grotesk_ExtraBold';
+    --Font_paragraphs: 18px;
+}
+
+
+
+body {
+    background: var(--Pale_blue);
+    font-family: 'Hanken Grotesk';
+}
+
+
+.centered-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-container {
+    display: inline-flex;
+    width: min-content;
+    background: var(--White);
+    border-radius: 24px;
+    box-shadow: 0px 0px 32px 0px rgba(17, 37, 212, 0.20);
+    gap: 16px;
+}
+
+
+h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+
+
+
+
+
+/*---------- PARTIE VIOLETTE ----------*/
+
+.violet-container {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: min-content;
+    padding: 32px 56px;
+    border-radius: 24px;
+    color: var(--White);
+    background: linear-gradient(var(--Light_slate_blue-background), var(--Light_royal_blue-background));
+}
+
+
+.violet-container h2 {
+    margin: 16px 0px;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    opacity: 0.75;
+    font-weight: var(--Font_weight_500);
+}
+
+.violet-container p {
+    font-size: 18px;
+    color: var(--White);
+    opacity: 0.50;
+    margin: 0;
+    text-align: center;
+}
+
+
+.cercle {
+    margin: 20px;
+    padding: 50px 60px;
+    border-radius: 200px;
+    text-align: center;
+    background: linear-gradient(var(--Violet_blue-circle), var(--Persian_blue-circle));
+}
+
+.cercle strong {
+    font-size: 80px;
+    line-height: normal;
+}
+
+.cercle p {
+    font-size: 18px;
+    color: var(--White);
+    opacity: 0.4;
+    line-height: 8px;
+}
+
+
+
+
+
+
+
+/*---------- PARTIE BLANCHE ----------*/
+
+
+
+
+.white-container {
+    display: inline-flex;
+    flex-direction: column;
+    min-width: fit-content;
+    background: var(--White);
+    border-radius: 24px;
+    padding: 32px;
+}
+
+.white-container h2 {
+    margin: 16px 0px;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color: var(--Dark_gray_blue);
+}
+
+/* ALL BAR */
+.all-bar {
+    display: flex;
+    flex-direction: column;
+    max-width: max-content;
+    gap: 16px;
+}
+
+/* BAR ROUGE - REACTION */
+.bar-red {
+    display: inline-flex;
+    padding: 0px 16px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    background: rgba(255, 0, 0, 0.07);
+    border-radius: 8px;
+    color: var(--Dark_gray_blue);
+}
+
+
+.score1 {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.score1 p {
+    opacity: 0.7;
+
+}
+
+.icon-title1 {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--Light_red);
+}
+
+
+/* BAR JAUNE - MEMORY */
+.bar-yellow {
+    display: inline-flex;
+    padding: 0px 16px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    background: #feb01f16;
+    border-radius: 8px;
+    color: var(--Dark_gray_blue);
+}
+
+
+.score2 {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.score2 p {
+    opacity: 0.7;
+
+}
+
+.icon-title2 {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--Orange_yellow);
+}
+
+
+/* BAR VERTE - VERBAL */
+.bar-green {
+    display: inline-flex;
+    padding: 0px 16px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    background: #01bd9110;
+    border-radius: 8px;
+    color: var(--Dark_gray_blue);
+}
+
+
+.score3 {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.score3 p {
+    opacity: 0.7;
+
+}
+
+.icon-title3 {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--Green_teal);
+}
+
+
+/* BAR BLEU - VISUAL */
+.bar-blue {
+    display: inline-flex;
+    padding: 0px 16px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    background: #1124d40d;
+    border-radius: 8px;
+    color: var(--Dark_gray_blue);
+}
+
+
+.score4 {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.score4 p {
+    opacity: 0.7;
+
+}
+
+.icon-title4 {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--Cobalt_blue);
+}
+
+.all-bar input {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(var(--Light_slate_blue-background), var(--Light_royal_blue-background));
+    ;
+    margin-top: 40px;
+    border: none;
+    border-radius: 150px;
+    font-family: 'Hanken Grotesk';
+    font-size: 16px;
+    color: var(--White);
+}
+
+input:hover {
+    background: var(--Dark_gray_blue);
+}
